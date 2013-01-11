@@ -4,7 +4,7 @@
 	>
 	<item
 		android:state_pressed="true"
-		android:drawable="@drawable/clcx1"
+		android:drawable="@drawable/clcx"
 		>
 	</item>
 	<item

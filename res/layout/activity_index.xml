@@ -136,7 +136,7 @@
                 android:src="@drawable/button_cheliangchaxun" />
 
             <ImageButton
-                android:id="@+id/imageButton7"
+                android:id="@+id/imageButtonJSCX"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
@@ -156,7 +156,7 @@
             android:gravity="center" >
 
             <ImageButton
-                android:id="@+id/imageButton8"
+                android:id="@+id/imageButtonJTZX"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
@@ -167,7 +167,7 @@
                 android:src="@drawable/button_jiaotongzixun" />
 
             <ImageButton
-                android:id="@+id/imageButton9"
+                android:id="@+id/imageButtonBXBJ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
@@ -188,7 +188,7 @@
             android:gravity="center" >
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/imageButtonTHSJ"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
@@ -199,7 +199,7 @@
                 android:src="@drawable/button_tehuishangjia" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/imageButtonCTSC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
