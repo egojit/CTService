@@ -4,7 +4,7 @@
 	>
 	<item
 		android:state_pressed="true"
-		android:drawable="@drawable/ctsc"
+		android:drawable="@drawable/ctsc1"
 		>
 	</item>
 	<item
