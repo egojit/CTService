@@ -24,7 +24,7 @@
         android:layout_alignRight="@id/imageViewTop1"
         android:layout_alignTop="@id/imageViewTop1"
         android:gravity="center"
-        android:text="@string/index_title"
+        android:text="@string/login_title"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="25sp" />
 
@@ -36,7 +36,40 @@
         android:layout_below="@+id/imageViewTop1"
         android:src="@drawable/top2" />
 
-    <LinearLayout
+   
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewTop2" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <FrameLayout >
+                <TextView android:id="@+id/view1"
+       					android:layout_width="match_parent"
+        				android:layout_height="match_parent"
+        				android:text="页1"/>
+
+    			<TextView android:id="@+id/view2"
+        				android:layout_width="match_parent"
+        				android:layout_height="match_parent"
+        				android:text="页2"/>
+
+    			<TextView android:id="@+id/view3"
+        				android:layout_width="match_parent"
+        				android:layout_height="match_parent"
+        				android:text="页3"/>
+            </FrameLayout>
+        </TableRow>
+    </TableLayout>
+ <LinearLayout
         android:id="@+id/linearLayoutBottom"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -64,7 +97,6 @@
             android:padding="0dp"
             android:scaleType="fitStart"
             android:src="@drawable/button_tianqi" />
-
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="wrap_content"
@@ -74,7 +106,6 @@
             android:padding="0dp"
             android:scaleType="fitStart"
             android:src="@drawable/button_tianqi" />
-
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
@@ -84,7 +115,6 @@
             android:padding="0dp"
             android:scaleType="fitStart"
             android:src="@drawable/button_tianqi" />
-
         <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="wrap_content"
@@ -95,42 +125,7 @@
             android:scaleType="fitStart"
             android:src="@drawable/button_tianqi" />
     </LinearLayout>
-
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_above="@+id/linearLayoutBottom"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/imageViewTop2" >
-
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_weight="1"
-            android:gravity="center" >
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center" >
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1"
-            android:gravity="center" >
-        </TableRow>
-    </TableLayout>
-
+    
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
@@ -139,5 +134,4 @@
         android:layout_alignParentTop="true"
         android:layout_marginRight="10dp"
         android:src="@drawable/shuaxin" />
-
 </RelativeLayout>
