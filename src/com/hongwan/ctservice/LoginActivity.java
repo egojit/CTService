@@ -34,7 +34,7 @@ public class LoginActivity extends TabActivity {
 	     tabHost.addTab(spec);//添加进tabHost
 	     
 	   //第三个TAB
-	     intent = new Intent(this,ParticalCardLogin.class);//第二个Intent用作Tab1显示的内容
+	     intent = new Intent(this,ParticalPhoneLogin.class);//第二个Intent用作Tab1显示的内容
 	     spec = tabHost.newTabSpec("tab3")//新建一个 Tab
 	     .setIndicator("电话登录", res.getDrawable(android.R.drawable.ic_menu_camera))//设置名称以及图标
 	     .setContent(intent);//设置显示的intent，这里的参数也可以是R.id.xxx
