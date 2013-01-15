@@ -31,6 +31,22 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="ParticalAccountLoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="ParticalCardLogin"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity 
+            android:name="ParticalPhoneLogin"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
     </application>
 
 </manifest>

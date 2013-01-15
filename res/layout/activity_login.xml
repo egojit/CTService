@@ -51,22 +51,22 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:gravity="center" >
-            <FrameLayout >
-                <TextView android:id="@+id/view1"
-       					android:layout_width="match_parent"
-        				android:layout_height="match_parent"
-        				android:text="页1"/>
-
-    			<TextView android:id="@+id/view2"
-        				android:layout_width="match_parent"
-        				android:layout_height="match_parent"
-        				android:text="页2"/>
-
-    			<TextView android:id="@+id/view3"
-        				android:layout_width="match_parent"
-        				android:layout_height="match_parent"
-        				android:text="页3"/>
-            </FrameLayout>
+            <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent"
+ 				android:layout_height="fill_parent">
+ 				<LinearLayout
+  					android:orientation="vertical"
+  					android:layout_width="fill_parent"
+  					android:layout_height="fill_parent">
+  					<TabWidget android:id="@android:id/tabs"
+   						android:layout_width="fill_parent" 
+   						android:layout_height="wrap_content"></TabWidget>
+  						<FrameLayout
+            				android:id="@android:id/tabcontent"
+            				android:layout_width="fill_parent"
+            				android:layout_height="fill_parent"
+            				android:padding="5dp" />
+ 				</LinearLayout>
+			</TabHost>
         </TableRow>
     </TableLayout>
     
