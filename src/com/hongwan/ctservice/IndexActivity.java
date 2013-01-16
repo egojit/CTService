@@ -1,6 +1,8 @@
 package com.hongwan.ctservice;
 
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,13 +29,17 @@ public class IndexActivity extends Activity {
 
 		@Override
 		public void onClick(View view) {
+			Intent clcxIntent;
 			switch (view.getId()) {
 			// 保险报警
 			case R.id.imageButtonBXBJ:
 				break;
 			// 车辆查询
-			case R.id.imageButtonCLCX:
+			case R.id.imageButtonCLCX:{
+				clcxIntent= new Intent(IndexActivity.this, LoginActivity.class); 
+		        startActivity(clcxIntent); 
 				break;
+				}
 			// 畅通商城
 			case R.id.imageButtonCTSC:
 				break;
