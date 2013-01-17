@@ -6,6 +6,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="index_title">畅通服务网</string>
     <string name="login_title">用户登录</string>
-<string name="login_Notice_txt_Phone">请输入手机登录号码</string>
-<string name="login_Notice_txt_PhonePwd">请输入登录密码</string>
+	<string name="login_Notice_txt_Phone">请输入手机登录号码</string>
+	<string name="login_Notice_txt_PhonePwd">请输入登录密码</string>
+	<string name="car_search_title">车辆查询</string>
 </resources>

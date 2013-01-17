@@ -24,7 +24,7 @@
         android:layout_alignRight="@id/imageViewTop1"
         android:layout_alignTop="@id/imageViewTop1"
         android:gravity="center"
-        android:text="@string/login_title"
+        android:text="@string/car_search_title"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="25sp" />
 
@@ -44,22 +44,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/imageViewTop2" >
-            <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent"
- 				android:layout_height="fill_parent">
- 				<LinearLayout
-  				android:orientation="vertical"
-  				android:layout_width="fill_parent"
-  				android:layout_height="fill_parent">
-  				<TabWidget 
-  				    android:id="@android:id/tabs"
-   					android:layout_width="fill_parent" 
-   					android:layout_height="wrap_content"></TabWidget>
-  					<FrameLayout
-            			android:id="@android:id/tabcontent"
-            			android:layout_width="fill_parent"
-            			android:layout_height="fill_parent" />
- 				</LinearLayout>
-			</TabHost>
     </LinearLayout>
     
  	<LinearLayout
