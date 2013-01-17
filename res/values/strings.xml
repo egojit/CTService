@@ -12,7 +12,7 @@
 	<string name="txtview_car_search_numtype">好牌种类：</string>
 	<string name="txtview_car_search_num">好牌号码：</string>
 	<string name="txtview_car_search_registernum">登记证书编号：</string>
-	<string name="txtview_car_search_registernum">绑定车辆：</string>
+	<string name="txtview_car_search_binding">绑定车辆：</string>
 	<string name="btn_car_search_search">查询</string>
 	<string name="txtview_car_search_messagetitle">查询说明</string>
 </resources>
