@@ -2,18 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:layout_marginTop="20dp"
-    android:background="@drawable/background"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitStart"
         android:ems="10"
+        android:background="@drawable/text_phone_login_name"
         android:hint="@string/login_Notice_txt_Phone"
         android:drawableRight="@drawable/dd"
         >
@@ -22,10 +23,13 @@
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:ems="10"
+        android:background="@drawable/text_phone_login_name"
         android:hint="@string/login_Notice_txt_PhonePwd" />
 
     <LinearLayout
@@ -36,19 +40,31 @@
         android:orientation="horizontal" >
 
 	<CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="记住密码" />
+	    android:id="@+id/checkBox1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="记住密码"
+	    android:textColor="@color/black_overlay" />
 
          <CheckBox
              android:id="@+id/checkBox1"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
              android:layout_marginLeft="10dp"
-             android:text="自动登录" />
+             android:text="自动登录"
+             android:textColor="@color/black_overlay" />
 
     </LinearLayout>
 
+    <ImageButton
+        android:id="@+id/imgBtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:src="@drawable/button_img_login" 
+        />
     
 </LinearLayout>
