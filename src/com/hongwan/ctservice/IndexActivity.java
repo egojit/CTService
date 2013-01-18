@@ -36,7 +36,7 @@ public class IndexActivity extends Activity {
 				break;
 			// 车辆查询
 			case R.id.imageButtonCLCX:{
-				clcxIntent=new Intent(IndexActivity.this,CarSearchActivity.class);
+				clcxIntent=new Intent(IndexActivity.this,CarSearchActivity2.class);
 				startActivity(clcxIntent);
 				break;
 				}
