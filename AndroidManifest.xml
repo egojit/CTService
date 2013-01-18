@@ -47,6 +47,10 @@
             android:name="ParticalPhoneLogin"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <activity 
+            android:name="InfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
          <activity 
             android:name="CarSearchActivity"
             android:theme="@android:style/Theme.NoTitleBar">
