@@ -29,20 +29,26 @@ public class IndexActivity extends Activity {
 
 		@Override
 		public void onClick(View view) {
-			Intent clcxIntent;
+			Intent intent;
 			switch (view.getId()) {
 			// 保险报警
 			case R.id.imageButtonBXBJ:
 				break;
 			// 车辆查询
-			case R.id.imageButtonCLCX:{
-				clcxIntent= new Intent(IndexActivity.this, LoginActivity.class); 
-		        startActivity(clcxIntent); 
+			case R.id.imageButtonCLCX:
+			{
+				intent = new Intent(IndexActivity.this, LoginActivity.class); 
+		        startActivity(intent); 
 				break;
-				}
+			}
 			// 畅通商城
 			case R.id.imageButtonCTSC:
+			{
+				// 用于测试人员信息界面
+				intent = new Intent(IndexActivity.this, InfoActivity.class);
+				startActivity(intent);
 				break;
+			}
 			// 驾驶查询
 			case R.id.imageButtonJSCX:
 				break;
