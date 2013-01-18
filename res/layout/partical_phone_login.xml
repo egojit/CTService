@@ -7,7 +7,7 @@
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="15dp"
@@ -16,6 +16,7 @@
         android:ems="10"
         android:background="@drawable/text_phone_login_name"
         android:hint="@string/login_Notice_txt_Phone"
+        android:padding="10dp"
         android:drawableRight="@drawable/dd"
         >
         <requestFocus />
@@ -28,6 +29,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        
         android:ems="10"
         android:background="@drawable/text_phone_login_name"
         android:hint="@string/login_Notice_txt_PhonePwd" />

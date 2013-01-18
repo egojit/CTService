@@ -36,8 +36,8 @@ public class IndexActivity extends Activity {
 				break;
 			// 车辆查询
 			case R.id.imageButtonCLCX:{
-				clcxIntent=new Intent(IndexActivity.this,CarSearchActivity2.class);
-				startActivity(clcxIntent);
+				clcxIntent= new Intent(IndexActivity.this, LoginActivity.class); 
+		        startActivity(clcxIntent);
 				break;
 				}
 			// 畅通商城
