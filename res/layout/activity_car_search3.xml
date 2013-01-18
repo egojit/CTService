@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageViewTop1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewTop1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/top1" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewTop1"
+        android:layout_alignLeft="@id/imageViewTop1"
+        android:layout_alignRight="@id/imageViewTop1"
+        android:layout_alignTop="@id/imageViewTop1"
+        android:gravity="center"
+        android:text="@string/car_search_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageViewTop2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageViewTop1"
+        android:src="@drawable/top2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewTop2"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/layout_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+          	<LinearLayout
+          	    android:layout_width="fill_parent"
+          	    android:layout_height="fill_parent"
+          	    android:layout_weight="1"
+          	    android:background="@drawable/kuang"
+          	    android:orientation="vertical"
+          	    android:padding="10dp" >
+
+            	<ImageView
+            	    android:id="@+id/imageView1"
+            	    android:layout_width="fill_parent"
+            	    android:layout_height="fill_parent"
+            	    android:src="@drawable/car_test" />
+
+			</LinearLayout>
+            <LinearLayout 
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8">
+                <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="TextView" />
+
+                <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView" />
+            </LinearLayout> 
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:background="@drawable/btn_hide"
+            android:orientation="horizontal" ></LinearLayout>   
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.6"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/car_search_shang"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_car_content"
+                android:layout_weight="0.5"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/car_search_xia"
+                android:layout_weight="1.1"
+                />
+        </LinearLayout>  
+                
+    </LinearLayout>
+    
+ 	<LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="0dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_wanzhanshouye" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_tianqi" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_zuixingyoujia" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_huiyuandengluo" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_xitongshezhi" />
+
+    </LinearLayout>
+</RelativeLayout>
