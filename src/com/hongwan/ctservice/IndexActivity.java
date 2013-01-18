@@ -37,8 +37,8 @@ public class IndexActivity extends Activity {
 			// 车辆查询
 			case R.id.imageButtonCLCX:
 			{
-				intent = new Intent(IndexActivity.this, LoginActivity.class); 
-		        startActivity(intent); 
+				intent=new Intent(IndexActivity.this,CarSearchActivity2.class);
+				startActivity(intent);
 				break;
 			}
 			// 畅通商城
@@ -57,7 +57,10 @@ public class IndexActivity extends Activity {
 				break;
 			// 特惠商家
 			case R.id.imageButtonTHSJ:
-				break;
+			{
+				intent = new Intent(IndexActivity.this, LoginActivity.class); 
+		        startActivity(intent); 
+				break;}
 			}
 		}
 		
