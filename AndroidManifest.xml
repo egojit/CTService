@@ -55,6 +55,21 @@
             android:name="CarSearchActivity2"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
+        <activity 
+            android:name="ActivityTrafficMessage"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        
+         <activity 
+            android:name="ParticalTrafficHot"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!--  -->
+        <activity 
+            android:name="ParticalTrafficNew"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        
     </application>
 
 </manifest>

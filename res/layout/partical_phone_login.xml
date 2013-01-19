@@ -3,37 +3,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
+    android:padding="15dp"
     android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:scaleType="fitStart"
-        android:ems="10"
-        android:background="@drawable/text_phone_login_name"
-        android:hint="@string/login_Notice_txt_Phone"
-        android:padding="10dp"
-        android:drawableRight="@drawable/dd"
-        >
-        <requestFocus />
-    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1.8" >
+        <EditText
+        	android:id="@+id/editText2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="0dp"
+        	android:layout_margin="0dp"
+        	android:hint="@string/login_Notice_txt_Phone"
+        	android:drawableRight="@drawable/dd"
+        	android:background="@drawable/text_phone_login_name"
+        	android:layout_weight="1"
+        	android:ems="10" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_weight="1"
         android:background="@drawable/text_phone_login_name"
         android:hint="@string/login_Notice_txt_PhonePwd" />
+        
+    </LinearLayout>
 
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="40dp"
@@ -69,8 +75,7 @@
         />
         <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="fill_parent"
         android:gravity="center"
         android:orientation="horizontal" >
 
@@ -87,6 +92,6 @@
                 android:layout_marginLeft="5dp"
                 android:text="快速注册"
                 android:textColor="@color/blue" />
-
+            </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -34,7 +34,10 @@
         <item name="buttonBarStyle">@style/ButtonBar</item>
         <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
     </style>
-    
+    <!-- 文本框样式-->
+    <style name="edittext_login_style" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/txt_car_search</item>
+    </style>   
 	<!-- 全屏幕拉伸-->
     <style name="layout_full">  
     	<item name="android:layout_width">fill_parent</item>  

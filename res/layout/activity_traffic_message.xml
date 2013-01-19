@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 交通咨询框架布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/imageViewTop1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewTop1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/top1" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imageViewTop1"
+        android:layout_alignLeft="@id/imageViewTop1"
+        android:layout_alignRight="@id/imageViewTop1"
+        android:layout_alignTop="@id/imageViewTop1"
+        android:gravity="center"
+        android:text="@string/car_search_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageViewTop2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageViewTop1"
+        android:src="@drawable/top2" />
+    
+    <!-- 中间部分开始-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageViewTop2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp" >
+                <RelativeLayout android:layout_height="fill_parent"  
+        android:layout_width="fill_parent">  
+        <!-- 头部标签-->
+        <GridView android:layout_height="wrap_content" android:id="@+id/topBar"  
+            android:layout_alignParentTop="true" android:layout_width="fill_parent"  
+            android:fadingEdgeLength="5dip" android:fadingEdge="vertical">  
+        </GridView>
+         <!-- 切换内容容器-->
+        <LinearLayout android:id="@+id/Container"  
+            android:layout_below="@+id/gvTopBar" android:layout_width="fill_parent"  
+            android:layout_height="fill_parent">  
+        </LinearLayout>  
+    </RelativeLayout> 
+     
+    </LinearLayout>
+    <!-- 中间部分结束--> 
+    
+ 	<LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="0dp" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_wanzhanshouye" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_tianqi" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_zuixingyoujia" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_huiyuandengluo" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/button_xitongshezhi" />
+
+    </LinearLayout>
+</RelativeLayout>
