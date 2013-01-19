@@ -56,7 +56,7 @@
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <activity 
-            android:name="ActivityTrafficMessage"
+            android:name="TrafficMessageActivity"
             android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         

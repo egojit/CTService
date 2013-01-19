@@ -47,8 +47,11 @@ public class IndexActivity extends Activity {
 			case R.id.imageButtonJSCX:
 				break;
 			// 交通资讯
-			case R.id.imageButtonJTZX:
+			case R.id.imageButtonJTZX:{
+				clcxIntent= new Intent(IndexActivity.this, TrafficMessageActivity.class); 
+		        startActivity(clcxIntent);
 				break;
+			}
 			// 特惠商家
 			case R.id.imageButtonTHSJ:{
 				clcxIntent= new Intent(IndexActivity.this, LoginActivity.class); 

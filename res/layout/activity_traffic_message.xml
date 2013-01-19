@@ -47,17 +47,22 @@
         android:layout_alignTop="@+id/imageViewTop2"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
+        android:orientation="vertical"
         android:layout_marginTop="25dp" >
-                <RelativeLayout android:layout_height="fill_parent"  
+        <RelativeLayout android:layout_height="fill_parent"  
         android:layout_width="fill_parent">  
         <!-- 头部标签-->
-        <GridView android:layout_height="wrap_content" android:id="@+id/topBar"  
-            android:layout_alignParentTop="true" android:layout_width="fill_parent"  
-            android:fadingEdgeLength="5dip" android:fadingEdge="vertical">  
+        <GridView android:layout_height="wrap_content" 
+            android:id="@+id/topBar"  
+            android:layout_alignParentTop="true" 
+            android:layout_width="fill_parent"  
+            android:fadingEdgeLength="5dip" 
+            android:fadingEdge="vertical"> 
         </GridView>
          <!-- 切换内容容器-->
         <LinearLayout android:id="@+id/Container"  
-            android:layout_below="@+id/gvTopBar" android:layout_width="fill_parent"  
+            android:layout_below="@+id/topBar" 
+            android:layout_width="fill_parent"  
             android:layout_height="fill_parent">  
         </LinearLayout>  
     </RelativeLayout> 
