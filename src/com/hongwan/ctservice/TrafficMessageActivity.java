@@ -26,24 +26,25 @@ public class TrafficMessageActivity extends ActivityGroup {
   
     /** 顶部按钮图片 **/  
     int[] topbar_image_array = {R.drawable.top_banner1,R.drawable.top_banner2,
-    		R.drawable.top_banner3,R.drawable.top_banner4,R.drawable.top_banner5 };  
-    
+    		R.drawable.top_banner3,R.drawable.top_banner4,R.drawable.top_banner5 }; 
+    /**顶部获得焦点的图片**/
+    int[] focusTopbarImageArray={R.drawable.top_banner1f,R.drawable.top_banner2f,
+    		R.drawable.top_banner3f,R.drawable.top_banner4f,R.drawable.top_banner5f };
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		 super.onCreate(savedInstanceState);  
 	        setContentView(R.layout.activity_traffic_message);          
 	        gvTopBar = (GridView) this.findViewById(R.id.topBar);  
 	        gvTopBar.setNumColumns(topbar_image_array.length);// 设置每行列数  
-	        //gvTopBar.setSelector(new ColorDrawable(Color.TRANSPARENT));// 选中的时候为透明色  setSelector();
+	        gvTopBar.setSelector(new ColorDrawable(Color.TRANSPARENT));// 选中的时候为透明色  setSelector();
 	        gvTopBar.setGravity(Gravity.CENTER);// 位置居中  
 	        gvTopBar.setVerticalSpacing(0);// 垂直间隔  
 	        int width = this.getWindowManager().getDefaultDisplay().getWidth()/ topbar_image_array.length;  
-	        topImgAdapter =  new ImageAdapter(this, topbar_image_array, width, 48,  
-	                R.drawable.top_banner1f); 
+	        topImgAdapter =  new ImageAdapter(this, topbar_image_array,focusTopbarImageArray, width, 48,R.drawable.top_banner1f); 
 	        gvTopBar.setAdapter(topImgAdapter);// 设置菜单Adapter  
-	        //gvTopBar.setOnItemClickListener(new ItemClickEvent());// 项目点击事件  
-	        //container = (LinearLayout) findViewById(R.id.Container);  
-//	        SwitchActivity(0);//默认打开第0页  
+	        gvTopBar.setOnItemClickListener(new ItemClickEvent());// 项目点击事件  
+	        container = (LinearLayout) findViewById(R.id.Container);  
+	        SwitchActivity(0);//默认打开第0页  
 		
 	}
 	
@@ -75,7 +76,7 @@ public class TrafficMessageActivity extends ActivityGroup {
         			intent = new Intent(TrafficMessageActivity.this,ParticalTrafficNew.class ); 
         			break;
         		}  
-        	case R.drawable.top_banner2:
+        	case 1:
         		{
         		intent = new Intent(TrafficMessageActivity.this,ParticalTrafficHot.class ); 
         		break;
